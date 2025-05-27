@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUSAKA</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style5.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <a href="#" class="navbar-logo">
+        <img src="PUSAKA2.png" alt="Logo" class="logo-img" />
+        <span>PUSAKA</span>
+      </a>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cari sesuatu..." />
+        <button onclick="search()">Search</button>
+      </div>
+      <div class="navbar-nav" id="navbar-nav">
+        <a href="index.html">Beranda</a>
+        <a href="Dashboard Anggaran.html">Dashboard Anggaran</a>
+        <a href="Keuangan.html">Keuangan</a>
+        <a href="Kepegawaian.html">Kepegawaian</a>
+        <a href="Download KAK.html">Download KAK</a>
+        <a href="Kalender Translok.html">Kalender Translok</a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <section class="section">
+      <h2>Prototype KAK</h2>
+      <p>Untuk menseragamkan KAK, silakan download prototype KAK berikut:</p>
+      <ul class="download-list">
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1mTXMMhJjM-t87t6UUxYsHz511i8ZIOOX/edit?tab=t.0"
+            target="_blank"
+            >1. KAK Honor Pencacahan/Pengolahan</a
+          >
+          +
+          <a
+            href="https://docs.google.com/document/d/1ohRD6cSDXsfwS8-gCcslEMasldqaG3d_/edit?tab=t.0"
+            target="_blank"
+            >Contoh SK Petugas Pendataan-Pengawasan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/13fGq-zqymWbvEEnCeI77T_qFrsY0uvo6/edit?tab=t.0"
+            target="_blank"
+            >2. KAK Honor Instruktur Daerah</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1TEqc5XPnqgK9eyzZz2dcdoliP-660iFv/edit?tab=t.0"
+            target="_blank"
+            >3. KAK Transport Lokal Pengawasan/Pencacahan</a
+          >
+          +
+          <a
+            href="https://docs.google.com/document/d/1VUHlMzF-_lR6Z977oOvEppI_xcUQ3lPh/edit?tab=t.0"
+            target="_blank"
+            >Surat Pernyataan Tidak Menggunakan Kendaraan Dinas</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1Y41Wdi87zZ5GooET2_lTvz5UdufJBmyv/edit?tab=t.0"
+            target="_blank"
+            >4. KAK Perjalanan Dinas Luar Kota</a
+          >
+          +
+          <a
+            href="https://docs.google.com/document/d/1-_4HKVIXEUIuoj7zutTmGiGNrQQ3Rg9F/edit?tab=t.0"
+            target="_blank"
+            >Laporan Perjalanan Dinas Luar Kota</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1-ygBMLA2E1ZwyVoYN1WOANlywLEwnOTS/edit?tab=t.0"
+            target="_blank"
+            >5. KAK Konsumsi Rapat</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1i3FF2IsVMqzxhKAUwYYG1QmjIL-4_CO3/edit"
+            target="_blank"
+            >6. KAK Paket Meeting</a
+          >
+          +
+          <a href="#">Laporan Pelatihan</a>
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1i3FF2IsVMqzxhKAUwYYG1QmjIL-4_CO3/edit"
+            target="_blank"
+            >7. KAK Perjalanan Paket Meeting (Uang Harian dan Transport peserta
+            pelatihan)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1ocxaOWjF3436HJWK9d_RYMzyQsZZSeBc/edit"
+            target="_blank"
+            >8. KAK Perlengkapan Petugas Pelatihan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1UXngUH1BvbaTWPXwFuaS5JTQTpZqka1f/edit"
+            target="_blank"
+            >9. KAK Paket Data/Pulsa Pelatihan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1UXngUH1BvbaTWPXwFuaS5JTQTpZqka1f/edit"
+            target="_blank"
+            >10. KAK Paket Data/Pulsa Pendataan</a
+          >
+        </li>
+        <li>
+          <a href="#">11. KAK Asuransi Petugas</a>
+        </li>
+        <li>
+          <a href="https://drive.bps.go.id/s/YGakr5yk4TmFGeb"
+          target="_blank"
+          >12. KAK tambahan</a>
+        </li>
+      </ul>
+
+      <h2>Dasar Pembiayaan</h2>
+      <ol class="download-list">
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1pE9tRyUE06-_D5s44vpdV2_vvc_CL1u9/view"
+            target="_blank"
+            >1. SK Transport</a
+          >
+          +
+          <a
+            href="https://docs.google.com/spreadsheets/d/1087AlGNiDwDS0mF-XQ7TssJiVWjqJyZ90qrhA7tmhZs/edit#gid=0"
+            target="_blank"
+            >Kumpulan peraturan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1fTWosvlduhUoT4iBIg56pf3tqJL2xa4t/view"
+            target="_blank"
+            >2. Standar Biaya Masukan 2025</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1_MU7smyXwN5CrSWZ80HG6et9v0IbNrDB/view"
+            target="_blank"
+            >3. SK Biaya Translok (Berisi jumlah tanda tangan pada visum)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1jAZ1akra65utKXYLLSPZTggpT_t1Gqpm/view"
+            target="_blank"
+            >4. Buku Pedoman Administrasi Keuangan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1kx8qIt7l3Y_vD0bspS6odQE_N_eKg5D-"
+            target="_blank"
+            >5. Perka No 115 Tahun 2024 Tentang Standar Biaya Statistik</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/presentation/d/1zcIO5aN6UD3E8uS5VS6dGUUUuLVy62Gv/edit?slide=id.p1#slide=id.p1"
+            target="_blank"
+            >6. Materi Bagian Umum - PPK -</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1jAZ1akra65utKXYLLSPZTggpT_t1Gqpm/view"
+            target="_blank"
+            >7. SBKS (Standar Biaya Kegiatan Statistik)</a
+          >
+        </li>
+      </ol>
+
+      <h2>Contoh SPJ</h2>
+      <div class="spj-gallery">
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ KONSUMSI RAPAT</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img src="spj konsumsi rapat.jpg" alt="SPJ KONSUMSI RAPAT" />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ PERLENGKAPAN PELATIHAN</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img
+              src="spj perkap pakai habis.jpg"
+              alt="SPJ PERLENGKAPAN PELATIHAN"
+            />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ PENGGANDAAN PENCETAKAN</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img
+              src="spj Penggandaan Pencetakan.jpg"
+              alt="SPJ PENGGANDAAN PENCETAKAN"
+            />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ PERSEDIAAN BARANG KONSUMSI</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img
+              src="SPJ PERSEDIAAN BARANG KONSUMSI.jpg"
+              alt="SPJ PERSEDIAAN BARANG KONSUMSI"
+            />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ HONORARIUM</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img src="SPJ HONORARIUM.jpg" alt="SPJ HONORARIUM" />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ PERJALANAN DINAS</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img src="SPJ PERJALANAN DINAS.jpg" alt="SPJ PERJALANAN DINAS" />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ PAKET MEETING</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img src="SPJ PAKET MEETING.jpg" alt="SPJ PAKET MEETING" />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ SEWA</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img src="SPJ SEWA.jpg" alt="SPJ SEWA" />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ JASA PENGIRIMAN EKSPEDISI</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img
+              src="SPJ JASA PENGIRIMAN EKSPEDISI.jpg"
+              alt="SPJ JASA PENGIRIMAN EKSPEDISI"
+            />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ JASA ASURANSI</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img src="SPJ JASA ASURANSI.jpg" alt="SPJ JASA ASURANSI" />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ JASA LAINNYA</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img src="SPJ JASA LAINNYA.jpg" alt="SPJ JASA LAINNYA" />
+          </div>
+        </div>
+        <div class="spj-item">
+          <button class="accordion-toggle">
+            <span>SPJ PULSA PAKET DATA INTERNET</span>
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <img
+              src="SPJ PULSA PAKET DATA INTERNET.jpg"
+              alt="SPJ PULSA PAKET DATA INTERNET"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer start -->
+    <footer class="custom-footer">
+      <div class="footer-top">
+        <!-- Kiri: Logo & Identitas -->
+        <div class="footer-left">
+          <img src="bps9.png" alt="Logo BPS" class="footer-logo" />
+          <h3>Badan Pusat Statistik Kabupaten Lamongan</h3>
+          <p>Jl. Veteran 185 Lamongan-62218</p>
+          <p>Telp (0322) 3103310</p>
+          <p>Fax (0322) 3103310</p>
+          <p>
+            Mailbox: <a href="mailto:bps3524@bps.go.id">bps3524@bps.go.id</a>
+          </p>
+        </div>
+
+        <!-- Kanan: Google Maps -->
+        <div class="footer-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.982019733436!2d112.4217262!3d-7.1280759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77f70ef0afb4d5%3A0x821e2af45f8ec3ba!2sBADAN%20PUSAT%20STATISTIK%20KABUPATEN%20LAMONGAN!5e0!3m2!1sid!2sid!4v1744275074032!5m2!1sid!2sid"
+            width="100%"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <p>Hak Cipta &copy; 2025 Badan Pusat Statistik</p>
+        <div class="footer-socials">
+          <!-- Facebook -->
+          <a
+            target="_blank"
+            aria-label="Facebook"
+            href="https://www.facebook.com/bps.k.lamongan/"
+          >
+            <img
+              alt="Facebook"
+              loading="lazy"
+              decoding="async"
+              src="https://lamongankab.bps.go.id/assets/icons/facebook.svg"
+            />
+          </a>
+
+          <!-- Instagram -->
+          <a
+            target="_blank"
+            aria-label="Instagram"
+            href="https://www.instagram.com/bpslamongan?utm_medium=copy_link"
+          >
+            <img
+              alt="Instagram"
+              loading="lazy"
+              decoding="async"
+              src="https://lamongankab.bps.go.id/assets/icons/instagram.svg"
+            />
+          </a>
+
+          <!-- X (Twitter) -->
+          <a
+            target="_blank"
+            aria-label="X"
+            href="https://x.com/bpslamongan3524"
+          >
+            <img
+              alt="X"
+              loading="lazy"
+              decoding="async"
+              src="https://lamongankab.bps.go.id/assets/icons/twitter.svg"
+            />
+          </a>
+
+          <!-- YouTube -->
+          <a
+            target="_blank"
+            aria-label="YouTube"
+            href="https://www.youtube.com/c/bpslamongan3524"
+          >
+            <img
+              alt="YouTube"
+              loading="lazy"
+              decoding="async"
+              src="https://lamongankab.bps.go.id/assets/icons/youtube.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="script.js"></script>
+
+    <!-- Chart.js for the budget chart -->
+    <script src="https://cdn.jsdelivr.net/npm
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- My Javascript -->
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+      window.addEventListener("load", checkScrollButtons);
+      window.addEventListener("resize", checkScrollButtons);
+    </script>
+  </body>
+</html>
